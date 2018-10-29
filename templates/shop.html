@@ -1,13 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>商品详情</title>
-		<link rel="stylesheet" href="css/shop.css" type="text/css" />
-		<link rel="stylesheet" href="css/reset.css" type="text/css" />
-		<script src="js/jquery-1.12.3.js"></script>
-		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
-		<script src="js/shop.js"></script>
+		<link rel="stylesheet" href="{% static 'css/shop.css' %}" type="text/css" />
+		<link rel="stylesheet" href="{% static 'css/reset.css' %}" type="text/css" />
+		<script src="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
+		<script src="{% static 'js/shop.js' %}"></script>
 	</head>
 	<body>
 		<!--商品页重做- 多div包裹写法-->
@@ -19,7 +20,7 @@
         			<li id="top3"><a href="">消息</a></li>
         		</ul>
         		<ul id="ul2">
-        			<li><a href="html/login.html">登录</a><a href="html/register.html">注册</a></li>
+        			<li><a href="{% static 'html/login.html' %}">登录</a><a href="{% static 'html/register.html' %}">注册</a></li>
         			<li><a href="">我的订单</a></li>
         			<li><a href="">我的百联</a></li>
         			<li><a href="">充值缴费</a></li>
@@ -35,10 +36,10 @@
         	<div class="main">
         		<div id="logo">
 	        		<div>
-	        			<a href="index.html"><img src="images/banner.jpg" /></a>
+	        			<a href="index.html"><img src="{% static 'images/banner.jpg' %}" /></a>
 	        		</div>
 	        		<div>
-	        			<img src="images/342870273.jpg" />
+	        			<img src="{% static 'images/342870273.jpg' %}" />
 	        		</div>        			
         		</div>
         		<div id="so">
@@ -226,7 +227,7 @@
         			<div>
         				<ul id="tj">
         					<li>
-        						<a href="shop.html?id=001"><img src="images/ha/img1.jpg" /></a>
+        						<a href="shop.html?id=001"><img src="{% static 'images/ha/img1.jpg' %}" /></a>
         						<div class="namebox">
         							<p>
         								<!--name-->
@@ -241,7 +242,7 @@
        
         					</li>
         					<li>
-        						<a href="shop.html?id=002"><img src="images/ha/img2.jpg" /></a>
+        						<a href="shop.html?id=002"><img src="{% static 'images/ha/img2.jpg' %}" /></a>
         						<div class="namebox">
         							<p>
         								<!--name-->
@@ -256,7 +257,7 @@
  
         					</li>
         					<li>
-        						<a href="shop.html?id=003"><img src="images/ha/img3.jpg" /></a>
+        						<a href="shop.html?id=003"><img src="{% static 'images/ha/img3.jpg' %}" /></a>
         						<div class="namebox">
         							<p>
         								<!--name-->
@@ -270,7 +271,7 @@
         						</div>
         					</li>
         					<li>
-        						<a href="shop.html?id=004"><img src="images/ha/img4.jpg" /></a>
+        						<a href="shop.html?id=004"><img src="{% static 'images/ha/img4.jpg' %}" /></a>
         						<div class="namebox">
         							<p>
         								<!--name-->
@@ -286,7 +287,7 @@
 
         					</li>
         					<li>
-        						<a href="shop.html?id=005"><img src="images/ha/img5.jpg" /></a>
+        						<a href="shop.html?id=005"><img src="{% static 'images/ha/img5.jpg' %}" /></a>
         						<div class="namebox">
         							<p>
         								<!--name-->

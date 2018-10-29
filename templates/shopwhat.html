@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link type="text/css" rel="stylesheet" href="css/reset.css" />
-		<link type="text/css" rel="stylesheet" href="css/style1.css" />
-		<link type="text/css" rel="stylesheet" href="css/shopwhat.css" />
-		<link type="text/css" rel="stylesheet" href="iconfont/iconfont.css" />	
-		<script src="js/jquery-1.12.3.js"></script>
-		<script src="js/cookie.js"></script>
-		<script src="js/style.js"></script>
-		<script src="js/shopwhat.js"></script>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/reset.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/style1.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/shopwhat.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'iconfont/iconfont.css' %}" />
+		<script src="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script src="{% static 'js/cookie.js' %}"></script>
+		<script src="{% static 'js/style.js' %}"></script>
+		<script src="{% static 'js/shopwhat.js' %}"></script>
 		<script>
 			$(function(){
 				
@@ -67,13 +68,13 @@
 		<div class="top" id="top">
 			<div class="main">
 				<ul class="left-top">
-					<li><img src="images/top1.jpg" /></li>
+					<li><img src="{% static 'images/top1.jpg' %}" /></li>
 					<li>百联集团旗下全渠道电商平台</li>
 					<li><a href="">网站导航</a></li>
 					<li><a href="">消息</a></li>
 				</ul>
 				<ul class="right-top">
-					<li><a href="html/login.html" class="iconfont">&#xe601;  请登录</a>&nbsp;&nbsp;<a href="html/register.html">注册</a></li>
+					<li><a href="{% static 'html/login.html' %}" class="iconfont">&#xe601;  请登录</a>&nbsp;&nbsp;<a href="{% static 'html/register.html' %}">注册</a></li>
 					<li><a href="">我的订单</a></li>
 					<li><a href="">我的百联</a></li>
 					<li><a href="">充值缴费</a></li>
@@ -86,7 +87,7 @@
 		<div class="toptop"></div>
 		<div class="main" style="position: relative;margin-top: 20px ;">	
 			<div class="logomian">
-				<a href="index.html"><img src="images/banner.jpg"/></a>
+				<a href="index.html"><img src="{% static 'images/banner.jpg' %}"/></a>
 				<form>
 					<input type="search" placeholder="iphone8" /><input type="submit" value="搜索" style="cursor: pointer;" />
 				</form>
@@ -225,8 +226,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-								<li><a href=""><img src="images/ha/11f.jpg" /></a></li>
-								<li><a href=""><img src="images/ha/12f.jpg" /></a></li>
+								<li><a href=""><img src="{% static 'images/ha/11f.jpg' %}" /></a></li>
+								<li><a href=""><img src="{% static 'images/ha/12f.jpg' %}" /></a></li>
 							</ul>
 						</div>
 					</dd>
@@ -331,8 +332,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/21f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/22f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/21f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/22f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -473,8 +474,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/31f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/32f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/31f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/32f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					<!--
@@ -590,8 +591,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/41f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/42f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/41f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/42f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					<!--
@@ -707,8 +708,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/51f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/52f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/51f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/52f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -818,8 +819,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/61f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/62f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/61f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/62f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -924,8 +925,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/71f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/72f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/71f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/72f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1016,8 +1017,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/81f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/82f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/81f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/82f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1138,8 +1139,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/91f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/92f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/91f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/92f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1237,8 +1238,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/101f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/102f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/101f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/102f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1331,8 +1332,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/111f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/112f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/111f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/112f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1432,8 +1433,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/121f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/122f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/121f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/122f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1523,8 +1524,8 @@
                                	时间：2017-10-12
                                	描述：这里是广告
                                -->
-							<li><a href=""><img src="images/ha/131f.jpg" /></a></li>
-							<li><a href=""><img src="images/ha/132f.jpg" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/131f.jpg' %}" /></a></li>
+							<li><a href=""><img src="{% static 'images/ha/132f.jpg' %}" /></a></li>
 						</ul>
 					</div>
 					</dd>
@@ -1572,11 +1573,11 @@
 			<div class="main kuqi">
 				
 				<div id="smallImg">
-					<img src="images/ha/371.jpg" width="448" height="448" />
+					<img src="{% static 'images/ha/371.jpg' %}" width="448" height="448" />
 					<div id="smallArea"></div>
 				</div>
 				<div id="bigArea">
-					<img id="bigImg" src="images/ha/371.jpg" width="600" height="600" />
+					<img id="bigImg" src="{% static 'images/ha/371.jpg' %}" width="600" height="600" />
 				</div>
 				<div class="nav-right">
 					<h1>【官方授权】Apple MacBook Pro MPXT2CH/A 13.3英寸笔记本电脑 深空灰色</h1>
@@ -1637,19 +1638,19 @@
 				<p><a href="http://res12.iblimg.com/respc-1/resources/v4.0/img/yaopingzigezheng.png?bl_mmc=blemall_-_0_-_0_-_0">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a></p>
 				<ul id="xs1">
 					<li>
-						<img src="images/ha/gongan.png" />
+						<img src="{% static 'images/ha/gongan.png' %}" />
 						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102002366&bl_mmc=blemall_-_0_-_0_-_0">沪公网安备 31010102002366号  </a>
 					</li>
 					<li>
-						<img src="images/ha/gongs.png" />
+						<img src="{% static 'images/ha/gongs.png' %}" />
 						<a href="http://shwg.dianping.com/?bl_mmc=blemall_-_0_-_0_-_0">网购大家评</a>
 					</li>
 					<li>
-						<img src="images/ha/wangjing.png" />
+						<img src="{% static 'images/ha/wangjing.png' %}" />
 						<a href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160729145737000001099658-SAIC_SHOW_310000-20160406145114141192&signData=MEYCIQCUhx+ulQL4t9jJgfgCH1oeTxexuWOVww3Hel3/UlRyLQIhAO2fVtZDl0EkYb0p/3M50cXqe694wDQoJNuUKNdQNOWf&bl_mmc=blemall_-_0_-_0_-_0">上海工商</a>
 					</li>
 					<li>
-						<img src="images/ha/zhizhao.png" />
+						<img src="{% static 'images/ha/zhizhao.png' %}" />
 						<a href="http://promotion.bl.com/nc/PC_HDGL20170407000001552_1592.html?bl_mmc=blemall_-_0_-_0_-_0">经营执照</a>
 					</li>
 				</ul>

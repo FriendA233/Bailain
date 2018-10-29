@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>欢迎注册--百联</title>
-		<link href="../css/reset.css" type="text/css" rel="stylesheet" />
-		<link href="../css/regist.css" type="text/css" rel="stylesheet" />
-		<script src="../js/jquery-1.12.3.js"></script>
-		<script src="../js/jquery.cookie.js"></script>
-		<script src="../js/gVerify.js"></script>
-		<script src="../js/register.js"></script>
+		<link href="../static/css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="../static/css/regist.css" type="text/css" rel="stylesheet" />
+{#		<script src="../static/js/jquery-1.12.3.js"></script>#}
+{#		<script src="../static/js/jquery.cookie.js"></script>#}
+{#		<script src="../static/js/gVerify.js"></script>#}
+{#		<script src="../static/js/register.js"></script>#}
 	</head>
 	<body>
 		<div class="top main">
-			<a href="http://www.bl.com/?bl_mmc=blemall_-_0_-_0_-_0"><img src="../images/logo.png" style="width: 159px;" /></a>
-			<img src="../images/yonghu.png" style="width: 127px;" />
+			<a href="http://www.bl.com/?bl_mmc=blemall_-_0_-_0_-_0"><img src="../static/images/logo.png" style="width: 159px;" /></a>
+			<img src="../static/images/yonghu.png" style="width: 127px;" />
 		</div>
 		<div class="box main">
 			<div class="box_p">
@@ -24,15 +25,17 @@
 				</div>
 			</div>
 			<div class="form-inpt">
+                <form action="/register/" method="post">
+                    {% csrf_token %}
 					<div class="inpt1">
 						<div class="inpt-i">
 							<i>*</i>用户名:
 						</div>
 						<div class="input-1">
-							<input class="inpt-show" id="inpt-show1" type="text" placeholder="6-20位字符，支持字母或字母与数字组合" />
+							<input class="inpt-show" id="inpt-show1" type="text" placeholder="6-20位字符，支持字母或字母与数字组合" name="username"/>
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a>请输入用户名</a>
 						</span>
 					</div>
@@ -41,10 +44,10 @@
 							<i>*</i>登录密码:
 						</div>
 						<div class="input-1">
-							<input class="inpt-show" id="inpt-show2" type="password" placeholder="8-20位字符，至少使用两种字符组合" />
+							<input class="inpt-show" id="inpt-show2" type="password" placeholder="8-20位字符，至少使用两种字符组合" name="password" />
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a>密码强度</a>
 							<ul>
 								<li>弱</li>
@@ -61,7 +64,7 @@
 							<input class="inpt-show" id="inpt-show3" type="password" placeholder="请再次输入密码" />
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a></a>
 						</span>
 					</div>
@@ -70,10 +73,10 @@
 							<i>*</i>手机号:
 						</div>
 						<div class="input-1">
-							<input class="inpt-show" id="inpt-show4" type="text" placeholder="请输入11位手机号码" maxlength="11" />
+							<input class="inpt-show" id="inpt-show4" type="text" placeholder="请输入11位手机号码" maxlength="11" name="tel" />
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a></a>
 						</span>
 					</div>
@@ -86,7 +89,7 @@
 							<div id="v_container"  style="width: 90px;height: 34px;" class="inpt-show3"></div>				
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a></a>
 						</span>
 					</div>
@@ -99,7 +102,7 @@
 							<input type="submit" value="点击获取" class="inpt-show3" />
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a></a>
 						</span>
 					</div>	
@@ -108,21 +111,20 @@
 							<i>*</i>电子邮箱:
 						</div>
 						<div class="input-1">
-							<input class="inpt-show" id="inpt-show7" type="email" placeholder="请输入有效邮箱" required />
+							<input class="inpt-show" id="inpt-show7" type="email" placeholder="请输入有效邮箱" required name="E-mail"/>
 						</div>
 						<span>
-							<img src="../images/yn.png" />
+							<img src="../static/images/yn.png" />
 							<a></a>
 						</span>
-					</div>		
-					<div class="inpt1">
-						<div class="inpt-i"></div>
+					</div>
+                    <div class="inpt-i"></div>
 						<input type="checkbox" id="check" />
 						<a>   我已阅读并同意   </a>
 						<a style="color: blue;" href="http://help.bl.com/articleDetailed.html?articleId=382&&categoryType=help&bl_mmc=blemall_-_0_-_0_-_0">《百联通会员注册协议》</a>
 						<br /><br />
 						<input class="input-1" id="inpt-show8" type="submit" value="立即注册 完成绑定" />
-					</div>			
+                </form>
 			</div>
 		</div>
 		<div class="bot">

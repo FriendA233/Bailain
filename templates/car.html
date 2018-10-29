@@ -1,12 +1,14 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/car.css" />
-		<script src="js/jquery-1.12.3.js"></script>
-		<script src="js/jquery.cookie.js"></script>		
+		<link rel="stylesheet" type="text/css" href="P{% static 'css/reset.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/car.css' %}" />
+		<script src="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 		<script>
 			$(function(){
 				$("a").attr("target","_blank");
@@ -252,18 +254,18 @@
         <div id="top">
         	<div class="main">
         		<ul id="ul1">
-        			<li id="top1"><a>百联集团666</a></li>
-        			<li id="top2"><a href="">网站导航</a></li>
-        			<li id="top3"><a href="">消息</a></li>
+        			<li id="top1" style="list-style: none"><a style="text-decoration: none">百联集团666</a></li>
+        			<li id="top2" style="list-style: none"><a href="" style="text-decoration: none">网站导航</a></li>
+        			<li id="top3" style="list-style: none"><a href="" style="text-decoration: none">消息</a></li>
         		</ul>
         		<ul id="ul2">
-        			<li><a href="html/login.html">登录</a><a href="html/register.html">注册</a></li>
-        			<li><a href="">我的订单</a></li>
-        			<li><a href="">我的百联</a></li>
-        			<li><a href="">充值缴费</a></li>
-        			<li><a href="">客户服务</a></li>
-        			<li><a href="">掌上百联</a></li>
-        			<li><a href="car.html">购物车</a></li>
+        			<li style="list-style: none"><a style="text-decoration: none" href="{% url 'bl:login' %}">登录</a><a style="text-decoration: none" href="{% url 'bl:register' %}">注册</a></li>
+        			<li style="list-style: none"><a href="" style="text-decoration: none">我的订单</a></li>
+        			<li style="list-style: none"><a href="" style="text-decoration: none">我的百联</a></li>
+        			<li style="list-style: none"><a href="" style="text-decoration: none">充值缴费</a></li>
+        			<li style="list-style: none"><a href="" style="text-decoration: none">客户服务</a></li>
+        			<li style="list-style: none"><a href="" style="text-decoration: none">掌上百联</a></li>
+        			<li style="list-style: none"><a href="car.html" style="text-decoration: none">购物车</a></li>
         		</ul>
         	</div>
         </div>
@@ -272,7 +274,7 @@
        		<div class="main">
        			<div id="hang">
        				<div id="hangimg">
-       					<a href="index.html"><img src="images/banner.jpg" /></a>
+       					<a href="index.html"><img src="{% static 'images/banner.jpg' %}" /></a>
        				</div>
        				<div id="hanga">
        					<a>购物车</a>
@@ -280,7 +282,7 @@
        			</div>
        			<div id="fang">
        				<a>现在</a>
-       				<a href="html/login.html">登录,</a>
+       				<a href="{% static 'html/login.html' %}">登录,</a>
        				<a>您购物车中的商品将会永久保存</a>
        			</div>
        		</div>

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link type="text/css" rel="stylesheet" href="css/reset.css" />
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/reset.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
 		<style>
 			ul,li {list-style: none;}
 			.img {
@@ -67,8 +68,8 @@ img{cursor: pointer;}
 	}
 		</style>
 		
-		<script src="js/jquery-1.12.3.js"></script>
-		<script src="js/jquery.cookie.js"></script>
+		<script src="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 		<script>
 			$(function(){
 					$("a").attr("target","_blank");
@@ -319,13 +320,13 @@ img{cursor: pointer;}
 		<div class="top" id="top">
 			<div class="main">
 				<ul class="left-top">
-					<li><img src="images/top1.jpg" /></li>
+					<li><img src="{% static 'images/top1.jpg' %}" /></li>
 					<li>百联集团旗下全渠道电商平台</li>
 					<li><a href="">网站导航</a></li>
 					<li><a href="">消息</a></li>
 				</ul>
 				<ul class="right-top">
-					<li><a href="html/login.html" class="iconfont">&#xe601;  请登录</a>&nbsp;&nbsp;<a href="html/register.html">注册</a></li>
+					<li><a href="{% static 'html/login.html' %}" class="iconfont">&#xe601;  请登录</a>&nbsp;&nbsp;<a href="{% static 'html/register.html' %}">注册</a></li>
 					<li><a href="">我的订单</a></li>
 					<li><a href="">我的百联</a></li>
 					<li><a href="">充值缴费</a></li>
@@ -337,7 +338,7 @@ img{cursor: pointer;}
 
 		</div>	
 		<div class="main" style="margin-top: 20px;">
-			<a href="index.html"><img src="images/banner.jpg"/></a>
+			<a href="index.html"><img src="{% static 'images/banner.jpg' %}"/></a>
 		</div>	
 		<div class="main" style="margin-top: 20px;" id="da">
 			<div style="float: left;">
@@ -371,19 +372,19 @@ img{cursor: pointer;}
 				<p><a href="http://res12.iblimg.com/respc-1/resources/v4.0/img/yaopingzigezheng.png?bl_mmc=blemall_-_0_-_0_-_0">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a></p>
 				<ul id="xs1">
 					<li>
-						<img src="images/ha/gongan.png" />
+						<img src="{% static 'images/ha/gongan.png' %}" />
 						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102002366&bl_mmc=blemall_-_0_-_0_-_0">沪公网安备 31010102002366号  </a>
 					</li>
 					<li>
-						<img src="images/ha/gongs.png" />
+						<img src="{% static 'images/ha/gongs.png' %}" />
 						<a href="http://shwg.dianping.com/?bl_mmc=blemall_-_0_-_0_-_0">网购大家评</a>
 					</li>
 					<li>
-						<img src="images/ha/wangjing.png" />
+						<img src="{% static 'images//ha/wangjing.png' %}" />
 						<a href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160729145737000001099658-SAIC_SHOW_310000-20160406145114141192&signData=MEYCIQCUhx+ulQL4t9jJgfgCH1oeTxexuWOVww3Hel3/UlRyLQIhAO2fVtZDl0EkYb0p/3M50cXqe694wDQoJNuUKNdQNOWf&bl_mmc=blemall_-_0_-_0_-_0">上海工商</a>
 					</li>
 					<li>
-						<img src="images/ha/zhizhao.png" />
+						<img src="{% static 'images/ha/zhizhao.png' %}" />
 						<a href="http://promotion.bl.com/nc/PC_HDGL20170407000001552_1592.html?bl_mmc=blemall_-_0_-_0_-_0">经营执照</a>
 					</li>
 				</ul>
