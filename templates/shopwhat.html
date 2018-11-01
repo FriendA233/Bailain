@@ -798,7 +798,7 @@
 									<h5>家纺布艺</h5>
 									<li><a href="">毛巾</a></li>
 									<li><a href="">毛巾礼盒</a></li>
-									<li><a href="">浴巾浴袍</a></li>
+									 <li><a href="">浴巾浴袍</a></li>
 									<li><a href="">家居拖鞋</a></li>
 									<li><a href="">靠垫坐垫</a></li>
 									<li><a href="">地毯地垫</a></li>
@@ -1571,20 +1571,19 @@
 		<div class="what">
 			<hr />
 			<div class="main kuqi">
-				
 				<div id="smallImg">
-					<img src="{% static 'images/ha/371.jpg' %}" width="448" height="448" />
+					<img src="{{ good.img1 }}" width="448" height="448" />
 					<div id="smallArea"></div>
 				</div>
 				<div id="bigArea">
-					<img id="bigImg" src="{% static 'images/ha/371.jpg' %}" width="600" height="600" />
+					<img id="bigImg" src="{{ good.img1 }}" width="600" height="600" />
 				</div>
 				<div class="nav-right">
-					<h1>【官方授权】Apple MacBook Pro MPXT2CH/A 13.3英寸笔记本电脑 深空灰色</h1>
+					<h1>【官方授权】{{ good.name }}</h1>
 					<a>2017款MacBook笔记本全新登场！第七代Intel处理器带来更强性能！（Core i5处理器/8GB内存/256GB硬盘 MPXT2CH/A）</a>
 					<div id="px1">
 						<div>抢啊！！！</div>
-						<div>活动价：<a>18888.00</a></div>
+						<div>活动价：<a>{{ good.init }}{{ good.price }}</a></div>
 					</div>
 					<div class="kaka">
 						<div>促销</div>
@@ -1624,6 +1623,18 @@
 						</div>
 					</div>
 				</div>
+                <div id='mwh1'>
+                    <img src="{{ good.img1 }}">
+                </div>
+                <div id='mwh2'>
+                    <img src="{{ good.img2 }}">
+                </div>
+                <div id='mwh3'>
+                    <img src="{{ good.img3 }}">
+                </div>
+                <div id='mwh4'>
+                    <img src="{{ good.img4 }}">
+                </div>
 			</div>
 			<div class="bott">
 			<div class="main" id="sx">

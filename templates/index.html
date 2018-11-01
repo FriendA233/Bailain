@@ -94,12 +94,19 @@
             <li><a href="">消息</a></li>
         </ul>
         <ul class="right-top">
-            <li><a href="{% url 'bl:login' %}" class="iconfont"> 请登录</a>&nbsp;&nbsp;<a href="{% url 'bl:register' %}">注册</a></li>
+            <li>
+                {% if username %}
+    <p>用户: {{ username }}</p>
+{% else %}
+    <p> 还未登录 </p>
+{% endif %}
+            </li>
+            <li><a href="{% url 'bl:login' %}" class="iconfont"> 请登录</a>&nbsp;&nbsp;<a href="{% url 'bl:register' %}">注册</a><a href="{% url 'bl:logout' %}">退出</a> </li>
             <li><a href="{% url 'bl:myCart' %}">我的订单</a></li>
-            <li><a href="{% url 'bl:shop' %}">我的百联</a></li>
-            <li><a href="{% url 'bl:shopwhat' %}">充值缴费</a></li>
-            <li><a href="">客户服务</a></li>
-            <li><a href="">掌上百联</a></li>
+            <li><a href="#">我的百联</a></li>
+            <li><a href="#">充值缴费</a></li>
+            <li><a href="#">客户服务</a></li>
+            <li><a href="#">掌上百联</a></li>
             <li><a href="{% url 'bl:car' %}" target="_blank">购物车</a></li>
         </ul>
     </div>
@@ -1717,42 +1724,44 @@
     <div class="shop main">
         <img src="{% static 'images/ha/1.jpg' %}">
         <ul id="shopx">
-            <!--<li>
-						<img src="images/ha/360.jpg" />
-						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
-						<p>￥7.9</p>
-						<p>参考价：￥13.0</p>
-					</li>
-					<li>
-						<img src="images/ha/361.jpg" />
-						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
-						<p>￥7.9</p>
-						<p>参考价：￥13.0</p>
-					</li>
-					<li>
-						<img src="images/ha/362.jpg" />
-						<a href="j../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
-						<p>￥7.9</p>
-						<p>参考价：￥13.0</p>
-					</li>
-					<li>
-						<img src="images/ha/363.jpg" />
-						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
-						<p>￥7.9</p>
-						<p>参考价：￥13.0</p>
-					</li>
-					<li>
-						<img src="images/ha/364.jpg" />
-						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
-						<p>￥7.9</p>
-						<p>参考价：￥13.0</p>
-					</li>
-					<li style="border: 0 !important;">
-						<img src="images/ha/365.jpg" />
-						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
-						<p>￥7.9</p>
-						<p>参考价：￥13.0</p>
-					</li>-->
+            {% for goods in goods_list %}
+             <li>
+                <img src="{{ goods.indeximg }}" />
+                <a href="{% url 'bl:shop' goods.id %}">{{ goods.name }}</a>
+                <p>销售量：{{ goods.price }}</p>
+                <p>参考价：{{ goods.init }}{{ goods.cost }}</p>
+            </li>
+            {% endfor %}
+{#					<li>#}
+{#						<img src="images/ha/361.jpg" />#}
+{#						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>#}
+{#						<p>￥7.9</p>#}
+{#						<p>参考价：￥13.0</p>#}
+{#					</li>#}
+{#					<li>#}
+{#						<img src="images/ha/362.jpg" />#}
+{#						<a href="j../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>#}
+{#						<p>￥7.9</p>#}
+{#						<p>参考价：￥13.0</p>#}
+{#					</li>#}
+{#					<li>#}
+{#						<img src="images/ha/363.jpg" />#}
+{#						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>#}
+{#						<p>￥7.9</p>#}
+{#						<p>参考价：￥13.0</p>#}
+{#					</li>#}
+{#					<li>#}
+{#						<img src="images/ha/364.jpg" />#}
+{#						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>#}
+{#						<p>￥7.9</p>#}
+{#						<p>参考价：￥13.0</p>#}
+{#					</li>#}
+{#					<li style="border: 0 !important;">#}
+{#						<img src="images/ha/365.jpg" />#}
+{#						<a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>#}
+{#						<p>￥7.9</p>#}
+{#						<p>参考价：￥13.0</p>#}
+{#					</li>-->#}
         </ul>
     </div>
     <div class="bannershop">
@@ -1915,7 +1924,12 @@
                 <li><img src="{% static 'images/ha/f111.jpg' %}"></li>
                 <li><img src="{% static 'images/ha/f112.jpg' %}"></li>
                 <li><img src="{% static 'images/ha/f113.jpg' %}"></li>
-            </ul>
+            </ul> <li>
+                <img src="{% static 'images/ha/360.jpg' %}" />
+                <a href="../百城e联/shopwhat.html">甘蒂牧场（MUH）全脂纯牛奶 1L 德国进口</a>
+                <p>￥7.9</p>
+                <p>参考价：￥13.0</p>
+            </li>
             <ul id="listf11">
                 <li><img src="{% static 'images/ha/f121.jpg' %}"></li>
                 <li><img src="{% static 'images/ha/f122.jpg' %}"></li>

@@ -9,3 +9,19 @@ class User(models.Model):
     mail = models.CharField(max_length=50)
     #唯一标识令牌
     token = models.CharField(max_length=256,default='')
+
+
+
+class Goods(models.Model):
+    indeximg = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    price = models.CharField(max_length=50)
+    cost = models.CharField(max_length=50)
+    init = models.CharField(max_length=10)
+    img1 = models.CharField(max_length=255)
+    img2 = models.CharField(max_length=255)
+    img3 = models.CharField(max_length=255)
+    img4 = models.CharField(max_length=255)
+
+
+

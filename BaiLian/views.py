@@ -7,11 +7,18 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from BaiLian.models import User
+from BaiLian.models import User, Goods
 
 
 def index(request):
-    return render(request,'index.html')
+    goods_list = Goods.objects.all()
+    token = request.COOKIES.get('token')
+    users = User.objects.filter(token=token)
+    if users.exists():
+        user = users.first()
+        return render(request, 'index.html', context={'username': user.username,'goods_list':goods_list})
+    else:
+        return render(request, 'index.html',context={'goods_list':goods_list})
 
 
 def generate_password(password):
@@ -25,7 +32,7 @@ def generate_token():
     md5 = hashlib.md5()
     md5.update(token.encode('utf-8'))
     return md5.hexdigest()
-
+#注册
 def register(request):
     if request.method == 'GET':
         return render(request,'register.html')
@@ -57,7 +64,7 @@ def register(request):
             return HttpResponse('注册失败' + e)
 
 
-
+#登陆
 def login(request):
     if request.method == 'GET':
         return render(request,'login.html')
@@ -84,6 +91,12 @@ def login(request):
         else:
             return HttpResponse('用户名或密码错误')
 
+#退出
+def logout(request):
+    response = redirect('bl:index')
+    response.delete_cookie('token')
+
+    return response
 
 def car(request):
     return render(request,'car.html')
@@ -93,9 +106,13 @@ def myCart(request):
     return render(request,'myCart.html')
 
 
-def shop(request):
-    return render(request,'shop.html')
+def shop(request,id = 1):
+    good = Goods.objects.filter(id=id).all().first()
+    return render(request,'shop.html',context={'good':good})
 
 
-def shopwhat(request):
-    return render(request,'shopwhat.html')
+def shopwhat(request,id):
+    good = Goods.objects.filter(id = id).all().first()
+    return render(request,'shopwhat.html',context={'good':good})
+
+

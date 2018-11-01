@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c14bce9-f4b7-4b8f-b2bb-c99a7d58bbf9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiLian/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0dfa77da-53a3-4af9-a0b6-4f226ee9fb76.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0dfa77da-53a3-4af9-a0b6-4f226ee9fb76.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaiLian/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaiLian/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiLian/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaiLian/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaiLian/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaiLian/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/html/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/shopwhat.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/shopwhat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shopwhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shopwhat.html" afterDir="false" />
     </list>
@@ -66,8 +60,8 @@
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BaiLian/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="63" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -78,8 +72,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BaiLian/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
+                <state relative-caret-position="225">
+                  <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
                   </folding>
@@ -90,8 +84,8 @@
           <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BaiLian/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -100,23 +94,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/register.html">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-                  <folding>
-                    <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                  </folding>
+                <state relative-caret-position="161">
+                  <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <file leaf-file-name="shop.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/templates/shop.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+                <state relative-caret-position="285">
+                  <caret line="112" column="61" selection-start-line="112" selection-start-column="61" selection-end-line="112" selection-end-column="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="shopwhat.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/css/shopwhat.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2280">
+                  <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -151,17 +151,18 @@
         <option value="$PROJECT_DIR$/Project/urls.py" />
         <option value="$PROJECT_DIR$/static/js/test.js" />
         <option value="$PROJECT_DIR$/templates/myCart.html" />
-        <option value="$PROJECT_DIR$/templates/shop.html" />
-        <option value="$PROJECT_DIR$/templates/shopwhat.html" />
         <option value="$PROJECT_DIR$/Project/settings.py" />
         <option value="$PROJECT_DIR$/Project/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/register.html" />
-        <option value="$PROJECT_DIR$/BaiLian/models.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/car.html" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/BaiLian/models.py" />
+        <option value="$PROJECT_DIR$/templates/shopwhat.html" />
+        <option value="$PROJECT_DIR$/static/css/shopwhat.css" />
         <option value="$PROJECT_DIR$/BaiLian/urls.py" />
         <option value="$PROJECT_DIR$/BaiLian/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/shop.html" />
       </list>
     </option>
   </component>
@@ -186,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,7 +214,7 @@
               <item name="Bailain" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bailain" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bailain" type="b2602c69:ProjectViewProjectNode" />
@@ -223,7 +225,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,21 +303,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1599" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32833788" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32970026" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32833788" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32833788" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1278099" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1425819" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.21387284" />
+      <window_info anchor="right" id="Database" order="4" weight="0.21387284" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="manage.py@Project" order="8" visible="true" weight="0.32970026" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -363,9 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
           <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -373,9 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -397,11 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3915">
           <caret line="261" column="104" selection-start-line="261" selection-start-column="104" selection-end-line="261" selection-end-column="104" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,20 +431,6 @@
     <entry file="file://$PROJECT_DIR$/Project/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/shopwhat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="1652" column="66" selection-start-line="1652" selection-start-column="66" selection-end-line="1652" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0dfa77da-53a3-4af9-a0b6-4f226ee9fb76/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -467,16 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -494,50 +461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0dfa77da-53a3-4af9-a0b6-4f226ee9fb76/schema/bailian/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0dfa77da-53a3-4af9-a0b6-4f226ee9fb76/schema/bailian/table/BaiLian_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaiLian/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/car.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="262" column="58" lean-forward="true" selection-start-line="262" selection-start-column="58" selection-end-line="262" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/myCart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3645">
           <caret line="243" column="35" lean-forward="true" selection-start-line="243" selection-start-column="35" selection-end-line="243" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -548,17 +475,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/shop.html">
+    <entry file="das://0dfa77da-53a3-4af9-a0b6-4f226ee9fb76/schema/bailian/table/BaiLian_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0dfa77da-53a3-4af9-a0b6-4f226ee9fb76/schema/bailian/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1221">
-          <caret line="289" column="98" selection-start-line="289" selection-start-column="98" selection-end-line="289" selection-end-column="98" />
+        <state relative-caret-position="1890">
+          <caret line="126" column="115" selection-start-line="126" selection-start-column="115" selection-end-line="126" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/363.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/362.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/img11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/360.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/361.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/img1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/img3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/img2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/img21.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/ha/img22.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shopwhat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="1635" column="20" selection-start-line="1635" selection-start-column="20" selection-end-line="1635" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1650">
+          <caret line="262" column="58" lean-forward="true" selection-start-line="262" selection-start-column="58" selection-end-line="262" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/342870273.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiLian/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0dfa77da-53a3-4af9-a0b6-4f226ee9fb76/schema/bailian/table/BaiLian_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/shopwhat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BaiLian/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="63" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -567,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BaiLian/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
+        <state relative-caret-position="225">
+          <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -577,8 +603,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+        <state relative-caret-position="161">
+          <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="112" column="61" selection-start-line="112" selection-start-column="61" selection-end-line="112" selection-end-column="61" />
         </state>
       </provider>
     </entry>
