@@ -7,18 +7,19 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from BaiLian.models import User, Goods
+from BaiLian.models import User, Goods, Slideshow
 
 
 def index(request):
     goods_list = Goods.objects.all()
+    slideshow = Slideshow.objects.all()
     token = request.COOKIES.get('token')
     users = User.objects.filter(token=token)
     if users.exists():
         user = users.first()
-        return render(request, 'index.html', context={'username': user.username,'goods_list':goods_list})
+        return render(request, 'index.html', context={'username': user.username,'goods_list':goods_list,'slideshow':slideshow})
     else:
-        return render(request, 'index.html',context={'goods_list':goods_list})
+        return render(request, 'index.html',context={'goods_list':goods_list,'slideshow':slideshow})
 
 
 def generate_password(password):

@@ -24,4 +24,6 @@ class Goods(models.Model):
     img4 = models.CharField(max_length=255)
 
 
+class Slideshow(models.Model):
+    img = models.CharField(max_length=100)
 

@@ -1641,12 +1641,16 @@
             <span class="icar"><img src="{% static 'images/ha/car.gif' %}"></span>
         </ul>
         <div id="banner">
-            <img src="{% static 'images/banner1.jpg' %}" class="img1" style="display: block !important;">
-            <img src="{% static 'images/banner2.jpg' %}" class="img1">
-            <img src="{% static 'images/banner3.jpg' %}" class="img1">
-            <img src="{% static 'images/banner4.jpg' %}" class="img1">
-            <img src="{% static 'images/banner5.jpg' %}" class="img1">
-            <img src="{% static 'images/banner6.jpg' %}" class="img1">
+            {% for sli in slideshow %}
+            <img src="{{ sli.img }}" class="img1" style="display: block !important;">
+            {% endfor %}
+
+{#            <img src="{% static 'images/banner1.jpg' %}" class="img1" style="display: block !important;">#}
+{#            <img src="{% static 'images/banner2.jpg' %}" class="img1" style="display: block !important;">#}
+{#            <img src="{% static 'images/banner3.jpg' %}" class="img1" style="display: block !important;">#}
+{#            <img src="{% static 'images/banner4.jpg' %}" class="img1" style="display: block !important;">#}
+{#            <img src="{% static 'images/banner5.jpg' %}" class="img1" style="display: block !important;">#}
+{#            <img src="{% static 'images/banner6.jpg' %}" class="img1" style="display: block !important;">#}
 
             <span id="span1">&lt;</span>
             <span id="span2">&gt;</span>
