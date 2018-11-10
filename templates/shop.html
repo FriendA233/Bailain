@@ -26,11 +26,11 @@
         			<li><a href="">充值缴费</a></li>
         			<li><a href="">客户服务</a></li>
         			<li><a href="">掌上百联</a></li>
-        			<li><a href="car.html">购物车</a></li>
+        			<li><a href="">购物车</a></li>
         		</ul>
         	</div>
         </div>
-        
+
         <!--banner logo 部分-->
         <div style="height: 78px;padding-bottom: 18px;">
         	<div class="main">
@@ -40,12 +40,12 @@
 	        		</div>
 	        		<div>
 	        			<img src="{% static 'images/342870273.jpg' %}" />
-	        		</div>        			
+	        		</div>
         		</div>
         		<div id="so">
 	         		<div id="Inpt">
 	        			<input type="text" placeholder="10Q币只卖9.9！马化腾：‘亏死了’" /><input type="submit" value="" class="" />
-	        		</div>  
+	        		</div>
 	        		<div id="first-a">
 	        			<a href="">iPhone</a>
 	        			<a href="">耐克</a>
@@ -58,10 +58,10 @@
 	        			<a href="">大米</a>
 	        			<a href="" style="border:none !important">大王天使</a>
 	        		</div>
-        		</div>	
+        		</div>
         	</div>
         </div>
-        
+
         <!--这里是黑色的列表-->
         <div id="black">
         	<div class="main">
@@ -80,7 +80,7 @@
         		</ul>
         	</div>
         </div>
-        
+
         <div style="height: 650px;">
         	<div class="main">
         		<div>
@@ -117,7 +117,7 @@
         		<div style="width: 710px;float: left;margin-left: 10px;">
         			<div class="namebox">
         				<!--获取商品name-->
-        				<p></p>
+        				<p>{{ good.name }}</p>
         			</div>
         			<div id="bebox">
         				<div id="redbox">
@@ -132,7 +132,7 @@
         					</div>
         					<div class="pricebox">
         						<p>
-        							<!--价格 price-->
+        							{{ good.init }}{{ good.price }}
         						</p>
         					</div>
         					<div id="rate">
@@ -141,20 +141,20 @@
         					<div id="costbox">
         						<a>参考价：</a>
         						<a>
-        							<!--参考价格 cost-->
+        							{{ good.init }}{{ good.cost }}
         						</a>
         					</div>
         				</div>
         			</div>
         			<div class="waibao">
-        				
+
         					<a class="left">配送</a>
-        				
-        			
+
+
         					<a>
         						99元免基础运费（5kg内）
         					</a>
-        				
+
         			</div>
         			<div>
         				<div class="left">
@@ -167,7 +167,7 @@
 	        						<!--发货方-->
 	        					</a>
 	        					<a>提供发货和售后服务，预计1-2天送达</a>
-	        				</div> 
+	        				</div>
 	        				<div id="olli">
 	        					<ol>
 	        						<li>不支持到店自提</li>
@@ -182,21 +182,21 @@
         					<a>购买数量</a>
         				</div>
         				<div style="float: left;">
-	        				<button style="float: left;width: 20px;height: 20px;">-</button>
-	        				<input id="ini" type="text" style="display: block;width: 18px;height: 16px;float: left;" value="1" />
-	        				<button style="float: left;width: 20px;height: 20px;">+</button>        					
+	        				<button style="float: left;width: 20px;height: 20px;" class="jiancaozuo" goodsid = {{ good.id }}>-</button>
+                            <input id="ini" type="text" style="width: 18px;height: 16px;float: left;" value="{{ cart.number }}"/>
+	        				<button style="float: left;width: 20px;height: 20px;" class="jiacaozuo" goodsid = {{ good.id }}>+</button>
         				</div>
-        				
+
         				<a style="margin-left: 20px;float: left;">限购20件</a>
-        				
+
         			</div>
         			<div style="width: 710px;height: 48px;">
 						<div class="left">
 							<!--空div-->
-						</div>    
+						</div>
 						<div id="box-two">
 							<div>立刻购买</div>
-							<div>加入购物车</div>
+                            <div><a href="{% url 'bl:myCart' %}" target="_self">加入购物车</a></div>
 							<div>
 								<a>收藏</a>
 							</div>
@@ -217,7 +217,7 @@
         		</div>
         	</div>
         </div>
-        
+
         <div id="boxtj">
         	<div class="main">
         		<div>
@@ -233,13 +233,13 @@
         								<!--name-->
         							</p>
         						</div>
-        						
+
         						<div class="pricebox">
         							<p>
         								<!--价格-->
         							</p>
         						</div>
-       
+
         					</li>
         					<li>
         						<a href="shop.html?id=002"><img src="{% static 'images/ha/img2.jpg' %}" /></a>
@@ -248,13 +248,13 @@
         								<!--name-->
         							</p>
         						</div>
-        						
+
         						<div class="pricebox">
         							<p>
         								<!--价格-->
         							</p>
         						</div>
- 
+
         					</li>
         					<li>
         						<a href="shop.html?id=003"><img src="{% static 'images/ha/img3.jpg' %}" /></a>
@@ -263,7 +263,7 @@
         								<!--name-->
         							</p>
         						</div>
-        						
+
         						<div class="pricebox">
         							<p>
         								<!--价格-->
@@ -277,13 +277,13 @@
         								<!--name-->
         							</p>
         						</div>
-        						
+
         						<div class="pricebox">
         							<p>
         								<!--价格-->
         							</p>
         						</div>
-        						
+
 
         					</li>
         					<li>
@@ -293,7 +293,7 @@
         								<!--name-->
         							</p>
         						</div>
-        						
+
         						<div class="pricebox">
         							<p>
         								<!--价格-->
@@ -305,9 +305,9 @@
         		</div>
         	</div>
         </div>
-        
+
         <!--底部-->
-        
+
          <div id="bt">
         	<div class="main">
         		<dl>
@@ -323,7 +323,7 @@
 	        			<dd><a href="">配送范围及运费</a></dd>
 	        			<dd><a href="">配送进度查询</a></dd>
 	        			<dd><a href="">自提服务</a></dd>
-	        			<dd><a href="">商品验货与签收</a></dd>         	
+	        			<dd><a href="">商品验货与签收</a></dd>
         		</dl>
         		<dl>
         			<dt>支付方式</dt>
@@ -341,7 +341,7 @@
        					<dd><a href="">商家入驻</a></dd>
        					<dd><a href="">商家规则</a></dd>
        					<dd><a href="">商家常见问题</a></dd>
-       			</dl>	
+       			</dl>
         	</div>
         </div>
         <!--最底部-->
@@ -366,6 +366,6 @@
         			<a href="">经营执照</a>
         		</div>
         	</div>
-        
+
 	</body>
 </html>

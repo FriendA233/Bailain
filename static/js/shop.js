@@ -23,44 +23,44 @@ $(function(){
 					}
 				})
 //				
-					$("#box-two").find("div").eq(1).click(function(){
-						$.get("JSON/sp.json", function(data){
-							var arr = data;
-							for (var i=0; i<arr.length; i++) {
-								var aobj = arr[i]; //每个商品数据
-								
-								//找到id相同的商品后，就可以使用obj了
-								if (aobj.id == pid) {
-									var obj = arr[i];
-									var arr2 = $.cookie("cart") ? JSON.parse($.cookie("cart")) : []
-									var isExist = false;
-									for (var j=0; j<arr2.length; j++) {
-										if (arr2[j].id == obj.id) {
-											if(sum!=1){
-												arr2[j].num = arr2[j].num + sum;
-											}
-											else{
-												arr2[j].num++;
-											}
-											isExist = true;
-											break;
-										}
-									}
-									if (isExist ==  false) {										
-										obj.num =  sum;							
-										obj.checked = true; //是否选中， 默认选中 
-										arr2.push(obj);
-									}
-									
-									
-									//将arr2添加到cookie中
-									$.cookie("cart", JSON.stringify(arr2), {expires:30, path:"/"});
-									console.log( $.cookie("cart") );
-								}
-							}
-						})
-						location.href = "car.html";
-					})
+// 					$("#box-two").find("div").eq(1).click(function(){
+// 						$.get("JSON/sp.json", function(data){
+// 							var arr = data;
+// 							for (var i=0; i<arr.length; i++) {
+// 								var aobj = arr[i]; //每个商品数据
+//
+// 								//找到id相同的商品后，就可以使用obj了
+// 								if (aobj.id == pid) {
+// 									var obj = arr[i];
+// 									// var arr2 = $.cookie("cart") ? JSON.parse($.cookie("cart")) : []
+// 									var isExist = false;
+// 									for (var j=0; j<arr2.length; j++) {
+// 										if (arr2[j].id == obj.id) {
+// 											if(sum!=1){
+// 												arr2[j].num = arr2[j].num + sum;
+// 											}
+// 											else{
+// 												arr2[j].num++;
+// 											}
+// 											isExist = true;
+// 											break;
+// 										}
+// 									}
+// 									if (isExist ==  false) {
+// 										obj.num =  sum;
+// 										obj.checked = true; //是否选中， 默认选中
+// 										arr2.push(obj);
+// 									}
+//
+//
+// 									//将arr2添加到cookie中
+// 									$.cookie("cart", JSON.stringify(arr2), {expires:30, path:"/"});
+// 									console.log( $.cookie("cart") );
+// 								}
+// 							}
+// 						})
+// 						location.href = "car.html";
+// 					})
 						$("#box-two").find("div").eq(0).click(function(){
 							location.href = "car.html";
 						
@@ -87,13 +87,13 @@ $(function(){
 				function getParams(str, name){
 					var arr = str.split("&");
 					for (var i=0; i<arr.length; i++) {
-						var str1 = arr[i]; // id=1002 
+						var str1 = arr[i]; // id=1002
 						var arr1 = str1.split("=");
 						if (arr1[0] == name) {
 							return arr1[1];
 						}
 					}
-					return ""; 
+					return "";
 				}
 				
 //切换图片        
@@ -162,35 +162,52 @@ $("#smallArea").height( $("#smallImg").height() * $("#bigArea").height() / $("#b
 					$("#smallArea").hide(); //隐藏小区域
 					$("#bigArea").hide(); //隐藏大区域
 				})
-				var sum = 1;
-				
-				$("button").eq(0).click(function(){
-					sum--;
-					if(sum <1 ){
-						sum =1;
-					}
-					$("#ini").get(0).value = sum;
-				})
-				$("button").eq(1).click(function(){
-					sum++;
-					if(sum >=99 ){
-						sum =99;
-					}
-					$("#ini").get(0).value = sum;
-				})
-				$("#ini").blur(function(){
-					sum = $("#ini").get(0).value;
-				})
+				// var sum = 1;
+				//
+				// $("button").eq(0).click(function(){
+				// 	sum--;
+				// 	if(sum <1 ){
+				// 		sum =1;
+				// 	}
+				// 	$("#ini").get(0).value = sum;
+				// })
+				// $("button").eq(1).click(function(){
+				// 	sum++;
+				// 	if(sum >=99 ){
+				// 		sum =99;
+				// 	}
+				// 	$("#ini").get(0).value = sum;
+				// })
+				// $("#ini").blur(function(){
+				// 	sum = $("#ini").get(0).value;
+				// })
 
-	///
-			
+//购物车操作
+//加操作
+    $('.jiacaozuo').click(function () {
 
+    	var goodsid = $(this).attr('goodsid')
 
+		$.get('/addcart/',{'goodsid':goodsid},function (response) {
+			console.log(response)
+			if(response.status == -1){
+				window.open('/login/',target='_self')
+			}else if(response.status == 1){
+				$('#ini').get(0).value = response.number
+			}
+        })
+    })
+//减操作
+	$('.jiancaozuo').click(function () {
+		var goodsid = $(this).attr('goodsid')
 
-
-
-
-
-
-
+		$.get('/jiancart/',{'goodsid':goodsid},function (response) {
+			console.log(response)
+			if(response.status == -1){
+				window.open('/login/',target='_self')
+			}else if(response.status == 1){
+				$('#ini').get(0).value = response.number
+			}
+        })
+    })
 })

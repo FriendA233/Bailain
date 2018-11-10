@@ -27,3 +27,12 @@ class Goods(models.Model):
 class Slideshow(models.Model):
     img = models.CharField(max_length=100)
 
+
+
+class Cart(models.Model):
+    user = models.ForeignKey(User)
+    goods =models.ForeignKey(Goods)
+    number = models.IntegerField()
+    isselect = models.BooleanField(default=True)
+
+
