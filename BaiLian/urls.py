@@ -12,5 +12,9 @@ urlpatterns = [
     url(r'^addcart/$',views.addcart,name='addcart'),
     url('^jiancart/$',views.jaincart,name='jiancart'),
     url('^changestatus/$',views.changestatus,name='changestatus'),
-    url('^allchange/$',views.allchange,name='allchange')
+    url('^allchange/$',views.allchange,name='allchange'),
+    url('^generateorder/$',views.generateorder,name='generateorder'),
+    url('^orderinfo/(\d+)/$',views.orderinfo,name='orderinfo'),
+    url('^notifyurl/$',views.notifyurl,name='notifyurl'),  #支付完成后的通知
+    url('^returnurl/$',views.returnurl,name='returnurl')  #支付完成后的通知
 ]

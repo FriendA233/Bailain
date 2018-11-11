@@ -7,7 +7,7 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from BaiLian.models import User, Goods, Slideshow, Cart
+from BaiLian.models import User, Goods, Slideshow, Cart, Order, OrderGoods
 
 
 def index(request):
@@ -255,3 +255,43 @@ def allchange(request):
 #         cart.save()
 
 
+def generateorder(request):
+    token = request.COOKIES.get('token')
+    user = User.objects.get(token=token)
+    #生成订单
+    order = Order()
+    order.user = user
+    order.identifier = str(int(time.time()))+ str(random.randrange(10000,100000))
+    order.save()
+    carts = Cart.objects.filter(user=user).filter(isselect=True)
+    for cart in carts:
+        orderGoods = OrderGoods()
+        orderGoods.order = order
+        orderGoods.goods = cart.goods
+        orderGoods.number = cart.number
+        orderGoods.save()
+
+    #    移除
+        cart.delete()
+
+    responseData = {
+        'msg':'订单生成成功',
+        'status':1,
+        'identifier':order.identifier
+    }
+    return JsonResponse(responseData)
+
+
+def orderinfo(request,identifier):
+    order = Order.objects.get(identifier=identifier)
+    return render(request,'order.html',context={'order':order})
+
+
+def notifyurl(request):
+    print('xxx 订单支付成功,请发货')
+    return JsonResponse({'msg':'success'})
+
+
+def returnurl(request):
+    print('xxx 订单支付成功,进行页面跳转')
+    return HttpResponse('进行页面跳转')
