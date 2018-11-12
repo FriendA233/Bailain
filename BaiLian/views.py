@@ -7,6 +7,7 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
+from BaiLian.alipay import alipay_bailian
 from BaiLian.models import User, Goods, Slideshow, Cart, Order, OrderGoods
 
 
@@ -91,7 +92,6 @@ def login(request):
             # 重定向
             response = redirect('bl:index')
             response.set_cookie('token', user.token)
-
             return response
         else:
             return HttpResponse('用户名或密码错误')
@@ -294,4 +294,19 @@ def notifyurl(request):
 
 def returnurl(request):
     print('xxx 订单支付成功,进行页面跳转')
-    return HttpResponse('进行页面跳转')
+    return render(request,'index.html')
+
+
+def pay(request):
+    identifier = request.GET.get('identifier')
+    print(identifier)
+    # 支付url
+    url =alipay_bailian.direct_pay(
+        subject='测试订单 --- iphoneX',
+        out_trade_no=identifier,
+        total_amount=9.9,
+        return_url='http://39.105.187.132/returnurl/'
+    )
+    # 拼接支付网关
+    alipay = 'https://openapi.alipaydev.com/gateway.do?{data}'.format(data=url)
+    return JsonResponse({'alipay':alipay})

@@ -15,6 +15,7 @@ urlpatterns = [
     url('^allchange/$',views.allchange,name='allchange'),
     url('^generateorder/$',views.generateorder,name='generateorder'),
     url('^orderinfo/(\d+)/$',views.orderinfo,name='orderinfo'),
+    url('^pay/$',views.pay,name='pay'),        #支付
     url('^notifyurl/$',views.notifyurl,name='notifyurl'),  #支付完成后的通知
     url('^returnurl/$',views.returnurl,name='returnurl')  #支付完成后的通知
 ]
